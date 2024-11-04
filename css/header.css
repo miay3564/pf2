@@ -1,0 +1,67 @@
+header {
+  height: 120px;
+}
+header nav.wrap {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+header nav h1 { 
+  display: block;
+}
+header nav h1 a {
+  display: block;
+  width: 132px;
+  height: 64px;
+  background-image: url(../img/logo.png);
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+header nav ul.gnb {
+  display: flex;
+  column-gap: 88px;
+  height: 100%;
+  align-items: center;
+}
+header nav ul.gnb li {
+  
+}
+header nav ul.gnb li a {  
+  font-size: 17px;
+}
+header nav ul.gnb li:last-child{
+  background-color: #00A5B1;
+  width: 125px;
+  border-radius: 20px;
+  padding: 8px 0 8px;
+  text-align: center;
+  font-size: 14px;
+}
+header nav ul.gnb li:last-child a{
+  color: white;
+  font-weight: 600;
+}
+header nav ul.lang {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  column-gap: 20px;
+  font-size: 15px;
+}
+header nav ul.lang::before{
+  content: "";
+  border-right: 1px solid #ccc;
+  height: 10px;
+  position: absolute;
+  left: 29px;
+  top: 4px;
+}
+header nav ul.lang li {
+  
+}
+header nav ul.lang li a {
+  
+}

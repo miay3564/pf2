@@ -1,0 +1,114 @@
+footer {
+  
+  height: auto;
+}
+footer .wrap {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  grid-template-rows: auto auto auto;
+  padding: 50px 0;
+  row-gap: 15px;
+}
+footer .wrap ul.fnb {
+  grid-column: 1 /span 2;
+  grid-row: 1;
+  justify-content: space-between;
+  position: relative;
+}
+footer .wrap ul.fnb::after{
+  content: "";
+  width: calc(100vw - 17px);
+  position: absolute;
+  left: calc((100vw - 17px - 1280px) / -2);
+  border-bottom: 1px solid;
+  bottom: 0;
+}
+footer .wrap ul.fnb li {
+  
+  padding-bottom: 20px;
+}
+footer .wrap ul.fnb li a {
+  
+  color: #3a466a;
+  font-weight: 700;
+  line-height: 2;
+  padding: 0 10px;
+  display: block;
+}
+footer .wrap p.tel {
+  grid-column: 3 /span 2;
+  grid-row: 1;
+  color: #00a6b1;
+  align-self: center;
+  padding-left: 10px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+footer .wrap h1 {
+  grid-column: 1;
+  grid-row: 2 / span2;
+  font-size: 0;
+  background-image: url(../img/flogo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  padding-top: 20px;
+}
+footer .wrap h1 a {
+  width: 200px;
+  height: 114px;
+  padding-top: 20px;
+}
+footer .wrap address {
+  grid-column: 2 /span 3;
+  grid-row: 2;
+  font-style: normal;
+  line-height: 1.5;
+  padding-left: 60px;
+  padding-top: 20px;
+}
+footer .wrap address span {
+  
+}
+footer .wrap ul.sns {
+  grid-column: 4;
+  grid-row: 2;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 15px;
+  padding-top: 20px;
+}
+footer .wrap ul.sns li {
+  
+}
+footer .wrap ul.sns li a {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0px;
+  width: 30px;
+  height: 30px;
+}
+footer .wrap ul.sns li:nth-child(1) a{
+  background-image: url(../img/insta.png)
+}
+footer .wrap ul.sns li:nth-child(2) a{
+  background-image: url(../img/blog.png)
+}
+footer .wrap ul.sns li:nth-child(3) a{
+  background-image: url(../img/fb.png)
+}
+footer .wrap ul.sns li:nth-child(4) a{
+  background-image: url(../img/youtub.png)
+}
+footer .wrap ul.sns li:nth-child(5) a{
+  background-image: url(../img/app.png)
+}
+footer .wrap p.copyright {
+  grid-column: 2 /span 3;
+  grid-row: 3;
+  color: #b8b8b8;
+  padding-top: 20px;
+  padding-left: 60px;
+}
