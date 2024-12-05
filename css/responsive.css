@@ -1,0 +1,94 @@
+@media screen and (max-width:1200px){
+      
+}
+  
+@media screen and (max-width:768px){
+/*   common   */
+  .wrap {
+    max-width: 768px;
+    margin: 0px auto;
+    padding: 50px 0;
+  }
+  .h2T {
+    font-size: calc(74px * 0.75);
+  }
+  .h5T {
+    font-size: calc(24px * 0.8);
+}
+/*   header   */
+  header{
+   height: 90px;
+   position: absolute;
+   z-index: 1;
+   width: 100%;
+   background-color: white;
+  }
+  header nav{
+   padding: 0 3%;
+  }
+  header nav h1 a{
+    width: 100px;
+    height: 50px;
+  }
+  header nav ul.gnb{
+    display: none;
+  }
+  header nav ul.lang{
+    display: none;
+  }
+  .ham{
+    display: flex;
+    width: 20px;
+    height: 16px;
+  }
+/*  title  */
+  #title{
+    height: 100%;
+  }
+  #title .wrap{
+    padding: 0;
+  }
+    /*  silck  */
+    #title .wrap>ul .slick-prev, #title .wrap>ul .slick-next{
+      width: 30px;
+      height: 30px;
+    }
+    #title .wrap>ul .slick-prev{
+      left: 0;
+      z-index: 1;
+    }
+    #title .wrap>ul .slick-prev:hover::before{
+      transform: translateX(0);
+    }
+    #title .wrap>ul .slick-next{
+      right: 0px;
+      z-index: 1;
+    }
+    #title .wrap>ul .slick-next:hover::before{
+      transform: translateX(0);
+    }
+    #title .wrap>ul .slick-prev::before, #title .wrap>ul .slick-next::before{
+      width: 30px;
+      height: 30px;
+    }
+  #title .wrap > ul li.t{
+    padding: 0;
+  }
+  #title .wrap ul li h2{
+    margin-left: 30px;
+  }
+  #title .wrap > ul li.t a{
+    font-size: 14px;
+    padding: 7px;
+  }
+/*  content  */
+  #contents .wrap{
+    
+  }
+  #contents .wrap h2{
+    
+  }
+  #contents .wrap .left{
+    
+  }
+}
